@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'event': 'subscribe','content':{'isClick': 'true','email': 'samuel.y.wong@gmail.com'}});
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -308,7 +312,8 @@
                         <div class="col-md-12">
                             <form class="new_botton">
                                 <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">Subscribe</button>
+                                <!-- <button class="submit">Subscribe</button> -->
+                                <button class="submit" onclick="dataLayer.push({'event': 'subscribe'});">Subscribe</button>
                             </form>
                         </div>
                     </div>
