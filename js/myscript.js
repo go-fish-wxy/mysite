@@ -3,7 +3,7 @@ var clickedOnShare = false; //share button is not clicked
 
 //replace with your publisher ID
 //it's in your profile setting
-var AddThisPubID = "ra-5b056b31a239b6eb";
+var AddThisPubID = "ra-61372be3379027e6";
 var AddThisJS =
   "//s7.addthis.com/js/300/addthis_widget.js#pubid=" + AddThisPubID;
 
