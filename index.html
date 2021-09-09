@@ -26,7 +26,7 @@
     <!-- site metas -->
     <title>flexed</title>
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="Welcome to DKU Demo website">
     <meta name="author" content="">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,7 +41,8 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
 <!-- body -->
 
 <body class="main-layout">
@@ -100,7 +101,7 @@
                                         <a class="nav-link" href="#about">About_20210909b</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="http://go.demo.pardot.com/l/240083/2021-09-08/6q2x76"> Request via tracked URL</a>
+                                        <a class="nav-link" href="http://go.demo.pardot.com/l/240083/2021-09-08/6q2x76"> Go to DKU land page via tracked URL</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="landpage.html">Embedded Request Form #2</a>
@@ -502,6 +503,19 @@
             else { window.addEventListener('load', async_load, false); }
         })();
         </script>
+        <button id="shareButton" onclick="share(this)">
+            <i class="fas fa-share-alt"></i>
+            <i class="fas fa-times"></i>
+            <div class="container">
+            <div class="addthis_inline_share_toolbox"></div>
+            
+            <!--for old users of AddThis-->
+            <div class="addthis_sharing_toolbox"></div>
+            </div>
+        </button>
+
+         <!-- Javascript files-->
+        <script src="js/myscript.js"></script>
 </body>
 
 </html>
