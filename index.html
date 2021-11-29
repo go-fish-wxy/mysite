@@ -223,7 +223,7 @@
                                 <!--
 									<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': document.getElementById('sub_email').value}});">Subscribe</button>
 								-->
-								<button class="submit" onclick="search_func()">Search</button>
+								<button class="submit" id="unnc-search-submit">Search-1</button>
                             </form>
                         </div>
                     </div>
@@ -459,16 +459,14 @@
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
+
+			$('#unnc-search-submit').on('click', function() {
+				var v_keyword = $("#sub_email").val();
+				window.location = "http://www3.lenoxsoft.com/s/240083/Zy9zGZeCZnUqDCD45YhfNIjf3cj6l14U?search_keywords=" + v_keyword;
+            });
+
         });
     </script>
-    <script type="text/javascript">
-		function search_func()
-		{
-			var v_keyword = $("#sub_email").val();
-			window.location = "?search_keywords" + v_keyword;
-		}
-
-	</script>
     <script>
         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
         // Australia.
