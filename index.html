@@ -227,6 +227,13 @@
                             </form>
                         </div>
                     </div>
+					<input class="tetter" placeholder="Type search keyword herein" type="text" name="search keyword" id="search_keyword">
+					<!-- <button class="submit">Subscribe</button> -->
+					<!--<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': 'samuel.y.wong_2@gmail.com'}});">Subscribe</button>-->
+					<!--
+						<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': document.getElementById('sub_email').value}});">Subscribe</button>
+					-->
+					<button class="submit" id="unnc-search-submit">Search-2</button>
                 </div>
             </div>
 
@@ -461,7 +468,7 @@
             });
 
 			$('#unnc-search-submit').on('click', function() {
-				var v_keyword = $("#sub_email").val();
+				var v_keyword = $("#search_keyword").val();
 				window.location = "http://www3.lenoxsoft.com/s/240083/Zy9zGZeCZnUqDCD45YhfNIjf3cj6l14U?search_keywords=" + v_keyword;
             });
 
