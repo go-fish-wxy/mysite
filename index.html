@@ -223,7 +223,7 @@
                                 <!--
 									<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': document.getElementById('sub_email').value}});">Subscribe</button>
 								-->
-								<button class="submit" id="unnc-search-submit">Search-X1</button>
+								<button class="submit" id="unnc-search-submit-3">Search-X1</button>
                             </form>
                         </div>
                     </div>
@@ -468,6 +468,10 @@
 				window.location = "http://www3.lenoxsoft.com/s/240083/Zy9zGZeCZnUqDCD45YhfNIjf3cj6l14U?search_keywords=" + v_keyword;
             });
 
+			$('#unnc-search-submit-3').on('click', function() {
+				var v_keyword = $("#search_keyword").val();
+				window.location = "http://www3.lenoxsoft.com/s/240083/Zy9zGZeCZnUqDCD45YhfNIjf3cj6l14U?search_keywords=" + v_keyword;
+            });
         });
     </script>
     <script>
