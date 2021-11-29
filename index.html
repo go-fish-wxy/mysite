@@ -220,7 +220,10 @@
                                 <input class="tetter" placeholder="Your email" type="text" name="Your email" id="sub_email">
                                 <!-- <button class="submit">Subscribe</button> -->
                                 <!--<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': 'samuel.y.wong_2@gmail.com'}});">Subscribe</button>-->
-                                <button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': document.getElementById('sub_email').value}});">Subscribe</button>
+                                <!--
+									<button class="submit" onclick="dataLayer.push({'event': 'subscribe', 'content': {'isClick': 'true','email': document.getElementById('sub_email').value}});">Subscribe</button>
+								-->
+								<button class="submit" onclick="search_func()">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -458,7 +461,14 @@
             });
         });
     </script>
+    <script type="text/javascript">
+		function search_func()
+		{
+			var v_keyword = $("#sub_email").val();
+			window.location = "?search_keywords" + v_keyword;
+		}
 
+	</script>
     <script>
         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
         // Australia.
