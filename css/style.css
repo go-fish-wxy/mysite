@@ -707,6 +707,17 @@
      border: inherit;
      width: 39%;
 }
+.new_botton_2 {
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.new_botton_2 .tetter {
+	padding: 10px 20px;
+	border-radius: inherit;
+	border: inherit;
+	width: 39%;
+}
  .submit {
      background: #070100;
      margin-left: -3px;
